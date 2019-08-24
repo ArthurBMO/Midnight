@@ -2,10 +2,9 @@
 font-family: Helvetica, Arial;
 color: white;
 background-image: url("star2.png");
+scroll-behavior: smooth;
 }
-html{
-  scroll-behavior: smooth;
-}
+
 .main{
 color: white;
 text-align: center;
@@ -58,12 +57,14 @@ border-radius:10%;
 #img{
   border-radius:1%;
   align:auto;
+  margin-left: 0.7%;
+  margin-bottom:0.7%;
 }
 
 #img:hover{
   transition-duration: 0.3s;
   box-shadow: 2px 4px 5px #232323;
-  transform: scale(1.05);
+  transform: scale(1.10);
 }
 
 footer:{
