@@ -1,0 +1,71 @@
+*{
+font-family: Helvetica, Arial;
+color: white;
+background-image: url("star.png");
+}
+html{
+  scroll-behavior: smooth;
+}
+.main{
+color: white;
+text-align: center;
+}
+
+.container-fluid{
+padding-top: 80px;
+}
+
+#barra_nav{
+	opacity: 0.9;
+}
+
+#nav_item{
+	color: white;
+}
+
+#nav_item:hover{
+	color: teal;
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+}
+
+#in{
+padding-top:50px;
+float: left;
+width:30%;
+}
+
+#about{
+float: right;
+width:70%;
+height: 340px;
+}
+
+#social{
+  width: 50px;
+  height:50px;
+  align:right;
+  margin-right: 100px;
+}
+
+#portfolio{
+float: center;
+padding-top: 100px;
+text-align: center;
+border-radius:10%;
+}
+
+#img{
+  border-radius:1%;
+  align:auto;
+}
+
+#img:hover{
+  transition-duration: 0.3s;
+  box-shadow: 2px 4px 5px #232323;
+  transform: scale(1.05);
+}
+
+footer:{
+margin: auto;
+}
