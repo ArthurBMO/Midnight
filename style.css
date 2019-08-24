@@ -1,8 +1,8 @@
 *{
-font-family: Helvetica, Arial;
-color: white;
-background-image: url(star2.png);
-scroll-behavior: smooth;
+  font-family: Helvetica, Arial;
+  color: white;
+  background-image: url(star2.png);
+  scroll-behavior: smooth;
 }
 
 @keyframes fadeIn{
@@ -16,40 +16,40 @@ scroll-behavior: smooth;
 }
 
 .main{
-color: white;
-text-align: center;
-animation: fadeIn 4s;
+  color: white;
+  text-align: center;
+  animation: fadeIn 4s;
 }
 
 .container-fluid{
-padding-top: 80px;
+  padding-top: 80px;
 }
 
 #barra_nav{
-	opacity: 0.9;
+  opacity: 0.9;
   animation: fadeIn 2.5s;
 }
 
 #nav_item{
-	color: white;
+  color: white;
 }
 
 #nav_item:hover{
-	color: teal;
-	transform: scale(1.1);
-	transition-duration: 0.3s;
+  color: teal;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 #in{
-padding-top:50px;
-float: left;
-width:30%;
+  padding-top:50px;
+  float: left;
+  width:30%;
 }
 
 #about{
-float: right;
-width:70%;
-height: 340px;
+  float: right;
+  width:70%;
+  height: 340px;
 }
 
 #social{
@@ -60,10 +60,10 @@ height: 340px;
 }
 
 #portfolio{
-float: center;
-padding-top: 100px;
-text-align: center;
-border-radius:10%;
+  float: center;
+  padding-top: 100px;
+  text-align: center;
+  border-radius:15%;
 }
 
 #img{
@@ -80,5 +80,5 @@ border-radius:10%;
 }
 
 footer:{
-margin: auto;
+  margin: auto;
 }
