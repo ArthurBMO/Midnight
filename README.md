@@ -1,2 +1,2 @@
 A website.
-https://arthurbmo.github.io/Midnight/
+https://arthurbmo.github.io/arthurBMO/
