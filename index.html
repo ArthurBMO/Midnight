@@ -4,52 +4,45 @@
     <title>Midnight</title>
     <link rel="icon" type="image/png" href="pink.jpg">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 </head>
 
 <body>
-  <nav id="barra_nav" class="navbar sticky-top navbar-expand-sm">
-    <a class="navbar-brand" href="https://youtu.be/oB4K0scMysc" target="_blank"><img src="916.png" style="width:30px;"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="collapsibleNavbar" class="collapse navbar-collapse">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a id="nav_item" class="nav-link" href="#main">Sobre</a></li>
-        <li class="nav-item"><a id="nav_item" class="nav-link" href="#portfolio">Portfólio</a></li>
-        <li class="nav-item"><a id="nav_item" class="nav-link" href="#contato">Contato</a></li>
-      </ul>
+    <script>
+        var data = new Date();
+        var result = data.getFullYear() - 1999;
+    </script>
+    <div class="navbar">
+        <a href="https://youtu.be/oB4K0scMysc" target="_blank"><img src="916.png" style="width:30px; margin-left:15px"></a>
+        <ul class="nav">
+          <li id="nav_item"><a href="#inicio" id="nav_item">Inicio</a></li>
+          <li id="nav_item"><a href="#portfolio" id="nav_item">Portfólio</a><li>
+          <li id="nav_item"><a href="#contato" id="nav_item">Contato</a><li>
     </div>
-  </nav>
 
-    <div class="main">
-        <div style="padding-bottom:520px">
+    <div class="main" id="inicio">
             <div id="in">
 	            <img style="border-radius: 100%" src="me.jpg" width="270px" height="335px">
-		    </div>
-
+		        </div>
 
             <div id="about">
                 <p style="font-size: 35px; margin-right:50px"><br><br>Sobre Mim</p>
                 <p style="margin-right:50px;font-size:18px;">Chamo-me Arthur, possuo 19 anos e vivo na cidade de Parnamirim/RN.<br>No presente momento, estou cursando bacharel em Ciencias e Tecnologia na Universidade Federal do Rio Grande do Norte, sou um poeta amador, tornei-me fluente em inglês independentemente,<br>adoro tirar retratos de pessoas, sou extremamente simpático e tenho uma certa facilidade para com linguagens de programação.</p>
-                <div class="col-sm">
                   <a href="https://t.me/mistahidnighto" target="_blank"><img id="social" src="logo.png"></a>
                   <a href="https://www.instagram.com/mistahmidnighto" target="_blank"><img id="social" src="inta.png"></a>
-                </div>
             </div>
         </div>
 
-
-        <div id="portfolio">
+        <div id="portfolio" style="margin-top:640px">
             <p style="font-size:35px">Pequena Galeria</p>
             <p>Um dos meus hobbies mais favoritos é a fotografia<br></p>
-            <img id="img" src="4.jpg" width="540" height="300">
+            <img id="img" src="4.jpg" width="540" height="300" style = "margin-right:15px">
             <img id="img" src="3.jpg" width="540" height="300">
-            <img id="img" src="2.jpg" width="540" height="300">
+            <img id="img" src="2.jpg" width="540" height="300" style = "margin-right:15px">
             <img id="img" src="1.jpg" width="540" height="300">
         </div>
 
-<!--inicio do contatos-->
+<!--inicio do contatos
         <div class="container-fluid">
 			<a name="contato"></a>
 			<div class="row ">
@@ -118,11 +111,11 @@
 			</div>
 
 		</div>
-<!--fim do contatos-->
+fim do contatos
     <div id="footer">
         <footer>
             <p style="color:white; margin-top: 78px">ProSempre - <a href="http://www.ejectufrn.com.br/" target="_blank">EJECT</a> © 2019 || Tutubarão</p>
 	    </footer>
-    </div>
+    </div>-->
 </body>
 </html>
