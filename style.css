@@ -77,10 +77,12 @@ body{
   padding-top:3%;
   float: left;
   width:30%;
+  clear: both;
 }
 
 #about{
   float: right;
+  clear: both;
   width:70%;
   height: 70%;
 }
@@ -93,6 +95,7 @@ body{
 }
 
 #portfolio{
+  clear: both;
   float: center;
   text-align: center;
   border-radius:15%;
