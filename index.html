@@ -5,6 +5,17 @@
     <link rel="icon" type="image/png" href="pink.jpg">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <script>
+        function height(){
+            var a = parseInt(document.getElementById('myText').value);
+            if(isNaN(a))
+                document.getElementById("coisa").innerHTML = "Invalid age";
+            else if(!(a == ""))
+                document.getElementById("coisa").innerHTML = "Alerta: Sua idade é " + a;
+            else if(a == "")
+                document.getElementById("coisa").innerHTML = "";
+        }
+    </script>
 </head>
 
 <body>
@@ -32,94 +43,62 @@
         <div id="portfolio" style="margin-top:33%">
             <p id="Preference" style="font-size:2.5vw; padding-top:3%">Pequena Galeria</p>
             <p style="font-size:1.5vw">Um dos meus hobbies mais favoritos é a fotografia<br></p>
-            <!--wanna add some sort of javascript here
-            <form>
-              <p>
-                <label></label>
+            <!--wanna add some sort of javascript here-->
+            <form onsubmit="return false">
+                <p>Digai tua idade</p>
                 <input style="color:black" type = "text"
                        id = "myText"
                        value = ""
-                       placeholder="idade" />
-                <button style="color:black">></button>
-              </p>
+                       placeholder="idade"
+                       autocomplete="off" />
+                <button onclick="height();" style="color:black">></button>
+                <p id="coisa"><p>
             </form>
             <img id="img" src="4.jpg" width="540" height="300">
             <img id="img" src="3.jpg" width="540" height="300">
             <img id="img" src="2.jpg" width="540" height="300">
             <img id="img" src="1.jpg" width="540" height="300">
-        </div>-->
+        </div>
 
 <!--inicio do contatos
-        <div class="container-fluid">
+    <div class="container-fluid">
 			<a name="contato"></a>
 			<div class="row ">
-
 				<div class="col-12 text-center">
-
 					<h1 class=" mx-md-auto text-center"><br><br>Contato</h1><br>
-
 					<form>
-
 						<div class="row">
-
 							<div class="col-md-6">
-
 								<div class="form-group">
-
 									<label for="name">Nome</label>
 									<input type="text" placeholder="Nome" id="name" class="form-control" >
-
 								</div>
-
 								<div class="form-group">
-
 									<label for="email">E-mail</label>
 									<input type="email" placeholder="exemplo@exemplo.com" class="form-control" >
-
 								</div>
-
-
 								<div class="form-group">
-
 									<label for="phone">Número de Telefone</label>
 									<input type="number" placeholder="(xx)xxxxx-xxxx" class="form-control" >
-
 								</div>
-
 							</div>
-
 							<div class="col-md-6">
-
 								<div class="form-group">
-
 									<label for="message">Mensagem</label>
 									<textarea placeholder="Mensagem" cols="30" rows="8" class="form-control" ></textarea>
-
 								</div>
-
 							</div>
-
 						</div>
-
 						<div class="row">
-
 							<div class="col-md-12">
-
 								<button class="btn btn-danger" style="color:white; border-color:white;">Enviar</button>
-
 							</div>
-
 						</div>
-
 					</form>
-
 				</div>
-
 			</div>
-
 		</div>
 fim do contatos-->
-<!--aaa-->
     <div id="footer">
         <footer>
             <p style="color:white; margin-top: 78px">ProSempre - <a href="http://www.ejectufrn.com.br/" target="_blank">EJECT</a> © 2019 || Tutubarão</p>
