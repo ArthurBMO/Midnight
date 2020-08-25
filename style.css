@@ -123,6 +123,36 @@ body{
   transform: scale(1.10);
 }
 
+#myText{
+  width:200px;
+  height:28px;
+  border-radius: 5px;
+  background-color: #ECECEC;
+}
+
+#myText:hover{
+  border-color:	#000080;
+}
+
+#myText:focus{
+  background-color: white;
+}
+
+.btn{
+  width:25px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 20%;
+  background-color: white;
+  outline: none;
+  border:none;
+}
+
+.btn:hover{
+  transition: 0.3s;
+  background-color: #77dd77;
+}
+
 footer:{
   margin: auto;
 }

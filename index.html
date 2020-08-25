@@ -7,13 +7,13 @@
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <script>
         function height(){
-            var a = parseInt(document.getElementById('myText').value);
-            if(isNaN(a))
+            var a = document.getElementById('myText').value
+            if(a == "")
+                document.getElementById("coisa").innerHTML = "";
+            else if(isNaN(parseInt(a)))
                 document.getElementById("coisa").innerHTML = "Invalid age";
             else if(!(a == ""))
                 document.getElementById("coisa").innerHTML = "Alerta: Sua idade é " + a;
-            else if(a == "")
-                document.getElementById("coisa").innerHTML = "";
         }
     </script>
 </head>
@@ -46,12 +46,12 @@
             <!--wanna add some sort of javascript here-->
             <form onsubmit="return false">
                 <p>Digai tua idade</p>
-                <input style="color:black" type = "text"
+                <input style="color:black;text-align:center" type = "text"
                        id = "myText"
                        value = ""
-                       placeholder="idade"
+                       placeholder="Idade"
                        autocomplete="off" />
-                <button onclick="height();" style="color:black">></button>
+                <button class="btn" onclick="height();" style="color:black">></button>
                 <p id="coisa"><p>
             </form>
             <img id="img" src="4.jpg" width="540" height="300">
