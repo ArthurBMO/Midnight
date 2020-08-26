@@ -4,16 +4,30 @@
     <title>Midnight</title>
     <link rel="icon" type="image/png" href="pink.jpg">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="amigao.js"></script>
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <script>
-        function height(){
+        function age(){
             var a = document.getElementById('myText').value
+
             if(a == "")
                 document.getElementById("coisa").innerHTML = "";
             else if(isNaN(parseInt(a)))
                 document.getElementById("coisa").innerHTML = "Invalid age";
             else if(!(a == ""))
                 document.getElementById("coisa").innerHTML = "Alerta: Sua idade é " + a;
+        }
+        function myAge(){
+            var ano = new Date();
+            var idade;
+            if(ano.getMonth() < 10)
+            	idade = ano.getFullYear()-2000;
+            else if(ano.getMonth() >= 10)
+            	idade = ano.getFullYear()-1999;
+            document.getElementById("myAge").innerHTML = "Chamo-me Arthur, possuo "+idade+" anos e vivo na cidade de Parnamirim/RN.";
+            document.getElementById("myAge2").innerHTML = "No presente momento, estou cursando bacharel em Ciencias e Tecnologia na Universidade Federal do Rio Grande do Norte.";
+            document.getElementById("myAge3").innerHTML = "Tenho prática com C++, HTML, GIT, BASH e sou fluente em inglês. ";
+            document.getElementById("myAge4").innerHTML = "Adoro tirar interagir com as pessoas, sou extremamente simpático e dedicado.";
         }
     </script>
 </head>
@@ -23,41 +37,42 @@
         <a href="https://youtu.be/oB4K0scMysc" target="_blank"><img src="916.png" style="width:30px; margin-left:15px"></a>
         <ul class="nav">
           <li id="nav_item"><a href="#inicio" id="nav_item">Inicio</a></li>
-          <li id="nav_item"><a href="#Preference" id="nav_item">Portfólio</a><li>
+          <li id="nav_item"><a href="#portfolio" id="nav_item">Portfólio</a><li>
           <li id="nav_item"><a href="#contato" id="nav_item">Contato</a><li>
     </div>
 
     <div class="main" id="inicio">
-            <div id="in">
-	            <img style="border-radius: 100%;" src="me.jpg" width="270px" height="335px">
-		        </div>
+        <div id="in">
+	        <img style="border-radius: 100%;" src="me.jpg" width="270px" height="335px">
+		</div>
 
-            <div id="about">
-                <p style="font-size:2vw; margin-right:10%"><br><br>Sobre Mim</p>
-                <p style="margin-right:5%;font-size:1.3vw;">Chamo-me Arthur, possuo 19 anos e vivo na cidade de Parnamirim/RN.<br>No presente momento, estou cursando bacharel em Ciencias e Tecnologia na Universidade Federal do Rio Grande do Norte, sou um poeta amador, tornei-me fluente em inglês independentemente,<br>adoro tirar retratos de pessoas, sou extremamente simpático e tenho uma certa facilidade para com linguagens de programação.</p>
-                  <a href="https://t.me/mistahidnighto" target="_blank"><img id="social" src="logo.png"></a>
-                  <a href="https://www.instagram.com/mistahmidnighto" target="_blank"><img id="social" src="inta.png"></a>
-            </div>
+        <div id="about">
+            <a href="https://github.com/ArthurBMO" target="_blank"><img style="margin-left:50px;width:47px;height:47px" id="social" src="git2.png"></a>
+            <a href="https://t.me/mistahmidnighto" target="_blank"><img id="social" src="logo.png"></a>
+            <p style="font-size:2vw;"><br>Sobre Mim</p>
+            <p id="myAge" style="font-size:1.3vw;margin-bottom:10px"><script>myAge();</script></p>
+            <p id="myAge2" style="font-size:1.3vw;margin-top:10px;margin-bottom:10px"><script>myAge();</script></p>
+            <p id="myAge3" style="font-size:1.3vw;margin-bottom:10px;margin-top:10px"><script>myAge();</script></p>
+            <p id="myAge4" style="font-size:1.3vw;margin-bottom:100px;margin-top:10px"><script>myAge();</script></p>
         </div>
+    </div>
+    <!-- fricken done -->
+        <div id="portfolio">
+            <p id="Preference" style="font-size:2.5vw; padding-top:5%">Projetos</p>
 
-        <div id="portfolio" style="margin-top:33%">
-            <p id="Preference" style="font-size:2.5vw; padding-top:3%">Pequena Galeria</p>
-            <p style="font-size:1.5vw">Um dos meus hobbies mais favoritos é a fotografia<br></p>
             <!--wanna add some sort of javascript here-->
-            <form onsubmit="return false">
-                <p>Digai tua idade</p>
-                <input style="color:black;text-align:center" type = "text"
-                       id = "myText"
-                       value = ""
-                       placeholder="Idade"
-                       autocomplete="off" />
-                <button class="btn" onclick="height();" style="color:black">></button>
-                <p id="coisa"><p>
-            </form>
-            <img id="img" src="4.jpg" width="540" height="300">
+            <div id="java_stuff">
+                <p style="font-size:1vw">Um menu simples de restaurante em JS.<br>Clique no botão para iniciar. <a href="https://github.com/ArthurBMO/Amigaos_menu" target="_blank">Ou em mim para ver o repositório</p></a>
+                <button class="btn" onclick="start();" style="color:black">></button>
+            </div>
+            <div>
+                <p style="font-size:1vw">Um jogo educativo sobre matemática para o 4 ano.<br>Clique na foto para jogar. <a href="https://github.com/ArthurBMO/Math_Destroyer" target="_blank">Ou em mim para ver o repositório</p></a>
+                <a href="https://arthurbmo.github.io/Math_Destroyer/" target="_blank"><img id="img" src="start.png" width="440px" height="300px"/></a>
+            </div>
+            <!--<img id="img" src="4.jpg" width="540" height="300">
             <img id="img" src="3.jpg" width="540" height="300">
             <img id="img" src="2.jpg" width="540" height="300">
-            <img id="img" src="1.jpg" width="540" height="300">
+            <img id="img" src="1.jpg" width="540" height="300">-->
         </div>
 
 <!--inicio do contatos
@@ -98,11 +113,11 @@
 				</div>
 			</div>
 		</div>
-fim do contatos-->
+fim do contatos
     <div id="footer">
         <footer>
             <p style="color:white; margin-top: 78px">ProSempre - <a href="http://www.ejectufrn.com.br/" target="_blank">EJECT</a> © 2019 || Tutubarão</p>
 	    </footer>
-    </div>
+    </div>-->
 </body>
 </html>
