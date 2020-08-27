@@ -7,16 +7,6 @@
     <script type="text/javascript" src="amigao.js"></script>
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <script>
-        function age(){
-            var a = document.getElementById('myText').value
-
-            if(a == "")
-                document.getElementById("coisa").innerHTML = "";
-            else if(isNaN(parseInt(a)))
-                document.getElementById("coisa").innerHTML = "Invalid age";
-            else if(!(a == ""))
-                document.getElementById("coisa").innerHTML = "Alerta: Sua idade é " + a;
-        }
         function myAge(){
             var ano = new Date();
             var idade;
@@ -37,7 +27,7 @@
         <a href="https://youtu.be/oB4K0scMysc" target="_blank"><img src="916.png" style="width:30px; margin-left:15px"></a>
         <ul class="nav">
           <li id="nav_item"><a href="#inicio" id="nav_item">Inicio</a></li>
-          <li id="nav_item"><a href="#portfolio" id="nav_item">Portfólio</a><li>
+          <li id="nav_item"><a href="#portfolio_heading" id="nav_item">Portfólio</a><li>
           <li id="nav_item"><a href="#contato" id="nav_item">Contato</a><li>
     </div>
 
@@ -50,29 +40,30 @@
             <a href="https://github.com/ArthurBMO" target="_blank"><img style="margin-left:50px;width:47px;height:47px" id="social" src="git2.png"></a>
             <a href="https://t.me/mistahmidnighto" target="_blank"><img id="social" src="logo.png"></a>
             <p style="font-size:2vw;"><br>Sobre Mim</p>
-            <p id="myAge" style="font-size:1.3vw;margin-bottom:10px"><script>myAge();</script></p>
-            <p id="myAge2" style="font-size:1.3vw;margin-top:10px;margin-bottom:10px"><script>myAge();</script></p>
-            <p id="myAge3" style="font-size:1.3vw;margin-bottom:10px;margin-top:10px"><script>myAge();</script></p>
-            <p id="myAge4" style="font-size:1.3vw;margin-bottom:100px;margin-top:10px"><script>myAge();</script></p>
+            <p id="myAge" style="font-size:1.3vw;margin-bottom:5px"><script>myAge();</script></p>
+            <p id="myAge2" style="font-size:1.3vw;margin-top:0px;margin-bottom:5px"><script>myAge();</script></p>
+            <p id="myAge3" style="font-size:1.3vw;margin-bottom:5px;margin-top:0px"><script>myAge();</script></p>
+            <p id="myAge4" style="font-size:1.3vw;margin-bottom:100px;margin-top:0px"><script>myAge();</script></p>
         </div>
     </div>
     <!-- fricken done -->
         <div id="portfolio">
-            <p id="Preference" style="font-size:2.5vw; padding-top:5%">Projetos</p>
-
+            <p id="portfolio_heading">Projetos</p>
             <!--wanna add some sort of javascript here-->
-            <div id="java_stuff">
-                <p style="font-size:1vw">Um menu simples de restaurante em JS.<br>Clique no botão para iniciar. <a href="https://github.com/ArthurBMO/Amigaos_menu" target="_blank">Ou em mim para ver o repositório</p></a>
-                <button class="btn" onclick="start();" style="color:black">></button>
+            <div id="portfolio_contents">
+                <div id="java_stuff">
+                    <p style="font-size:1vw">Um menu simples de restaurante em JS.<br>Clique no botão para iniciar.
+                        <a href="https://github.com/ArthurBMO/Amigaos_menu" target="_blank">Ou em mim para ver o repositório</a>
+                    </p>
+                    <button class="btn" onclick="start();" style="color:#FFF;font-size:12px">PLAY</button>
+                </div>
+                <div>
+                    <p style="font-size:1vw;justify-content:center;display:flex;margin:auto">Um jogo educativo sobre matemática para o 4 ano. Clique na foto para jogar.</p>
+                        <p style="font-size:1vw;justify-content:center;display:flex;margin-top:2px;margin-bottom:10px" ><a href="https://github.com/ArthurBMO/Math_Destroyer" target="_blank"> Ou em mim para ver o repositório</a>
+                    </p>
+                    <a href="https://arthurbmo.github.io/Math_Destroyer/" target="_blank"><img id="img" src="start.png" width="440px" height="300px"/></a>
+                </div>
             </div>
-            <div>
-                <p style="font-size:1vw">Um jogo educativo sobre matemática para o 4 ano.<br>Clique na foto para jogar. <a href="https://github.com/ArthurBMO/Math_Destroyer" target="_blank">Ou em mim para ver o repositório</p></a>
-                <a href="https://arthurbmo.github.io/Math_Destroyer/" target="_blank"><img id="img" src="start.png" width="440px" height="300px"/></a>
-            </div>
-            <!--<img id="img" src="4.jpg" width="540" height="300">
-            <img id="img" src="3.jpg" width="540" height="300">
-            <img id="img" src="2.jpg" width="540" height="300">
-            <img id="img" src="1.jpg" width="540" height="300">-->
         </div>
 
 <!--inicio do contatos
@@ -113,11 +104,11 @@
 				</div>
 			</div>
 		</div>
-fim do contatos
-    <div id="footer">
+fim do contatos-->
+    <div>
         <footer>
-            <p style="color:white; margin-top: 78px">ProSempre - <a href="http://www.ejectufrn.com.br/" target="_blank">EJECT</a> © 2019 || Tutubarão</p>
+            <p  id="footer">ProSempre - <a href="http://www.ejectufrn.com.br/" target="_blank">EJECT</a> © 2019 || Tutubarão</p>
 	    </footer>
-    </div>-->
+    </div>
 </body>
 </html>
