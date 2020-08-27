@@ -4,6 +4,11 @@
   scroll-behavior: smooth;
 }
 
+/*@font-face {
+    font-family: Apple2;
+    src: url(https://raw.githubusercontent.com/ArthurBMO/Very_simple_menu/master/Apple2.ttf);
+}*/
+
 body{
   background-image: url(star.png);
 }
