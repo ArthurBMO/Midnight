@@ -5,7 +5,7 @@
 }
 
 body{
-  background-image: url(star2.png);
+  background-image: url(star.png);
 }
 
 @keyframes fadeIn{
@@ -18,7 +18,7 @@ body{
   }
 }
 
-@keyframes fadeInNav {
+@keyframes fadeInNav{
   from{
     opacity: 0;
   }
@@ -26,13 +26,6 @@ body{
   to{
     opacity:0.9;
   }
-}
-
-.main{
-  padding-top: 40px;
-  color: white;
-  text-align: center;
-  animation: fadeIn 3s;
 }
 
 /*figure out the colour for navbar*/
@@ -74,6 +67,13 @@ body{
   transition-duration: 0.3s;
 }
 
+.main{
+  padding-top: 40px;
+  color: white;
+  text-align: center;
+  animation: fadeIn 3s;
+}
+
 #in{
   padding-top:3%;
   justify-content: center;
@@ -81,16 +81,15 @@ body{
   clear: both;
 }
 
+#social{
+  width: 51px;
+  height: 51px;
+}
+
 #about{
   clear: both;
   width:100%;
   height: 100%;
-}
-
-#social{
-  width: 50px;
-  height:50px;
-  margin-right: 50px;
 }
 
 #portfolio{
@@ -101,28 +100,47 @@ body{
 
 #portfolio_heading{
     font-size:2vw;
-    padding-top:1%;
+    padding: 1% 0% 0.5% 0%;
+    margin: 0.5% 0.5% 2% 0.5%;
     display: flex;
     justify-content: center;
-    border-radius: 150px;
-    padding-bottom:0.5%;
-    background-color:#127681;
+    /*border-radius: 150px;*/
+    background-color:#000080;
+    color:white;
+    text-transform: uppercase;
+    box-shadow: -0.3rem 0.6rem 0 rgba(29, 30, 28, 0.26);
 }
 
 #portfolio_contents{
-     background-color:#222;
-     padding-top:5%;
+     background-color: #00807F;
+     padding-top:0%;
      margin-left:0.5%;
      margin-right:0.5%;
-     border-radius:10px;
-     box-shadow: 0px 0px 0.4px #fff;
+     /*border-radius:10px;*/
+     border: 0.01px solid floralwhite;
 }
 
 #java_stuff{
     float:right;
     clear:both;
-    margin-right: 100px;
-    margin-top: 130px;
+    margin-right: 50px;
+    margin-top: 90px;
+    background-color: floralwhite;
+    padding: 50px 50px 50px 50px;
+    border: 1px solid black;
+    box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+}
+
+.btn{
+  width:120px;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  background-color: #dadad3;
+  padding: 5px;
+  color:black;
+  font-weight: 500;
 }
 
 #img{
@@ -140,21 +158,73 @@ body{
   transform: scale(1.05);
 }
 
-.btn{
-  width:120px;
-  height: 30px;
-  cursor: pointer;
-  border-radius: 100px;
-  background-color: #127681;
-  outline: none;
-  border:none;
-  transition: 0.3s;
+#contato{
+    background-color: #00807F;
+    padding: 1% 0%;
+    margin:2% 0.5% 0% 0.5%;
+    border: 0.01px solid floralwhite;
 }
 
-.btn:hover{
-  transition: 0.3s;
-  box-shadow: 0px 0px 15px #127681;
-  background-color: #127681;
+input, button, textarea {
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  background-image: none;
+  background-color: #dadad3;
+  box-shadow: none;
+  padding: 5px;
+  color:black;
+}
+input:focus, button:focus, textarea:focus {
+  outline: none;
+}
+
+textarea {
+  min-height: 50px;
+  resize: vertical;
+  margin: 0% -15%;
+  padding-bottom: 35%;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.feedback-card {
+  border: 1px solid black;
+  max-width: 980px;
+  background-color: floralwhite;
+  display: table;
+  margin: 0 auto;
+  box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+  padding:0% 2%;
+}
+.feedback-header {
+  text-align: center;
+  color:black;
+  padding: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+  margin: 0% -11%;
+}
+.feedback-body {
+  padding: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.feedback-body__email{
+    margin: 0% -15% 7%;
+}
+.feedback-body__message {
+  margin-top: 10px;
+}
+.feedback-body button {
+  margin-top: 10px;
+  align-self: flex-end;
 }
 
 #footer{
