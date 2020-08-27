@@ -185,7 +185,7 @@ input:focus, button:focus, textarea:focus {
 textarea {
   min-height: 50px;
   resize: vertical;
-  margin: 0% -15%;
+  margin: 0% -3.2vw;
   padding-bottom: 35%;
 }
 
@@ -201,7 +201,7 @@ button {
   display: table;
   margin: 0 auto;
   box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
-  padding:0% 2%;
+  padding:0% 3.3vw;
 }
 .feedback-header {
   text-align: center;
@@ -210,7 +210,7 @@ button {
   font-size: 17px;
   font-weight: 700;
   border-bottom: 1px solid black;
-  margin: 0% -11%;
+  margin: 0px -3.3vw;
 }
 .feedback-body {
   padding: 20px;
@@ -222,7 +222,7 @@ button {
 }
 
 .feedback-body__email{
-    margin: 0% -15% 7%;
+    margin: 0% -3.2vw 7%;
 }
 .feedback-body__message {
   margin-top: 10px;
