@@ -6,20 +6,6 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="amigao.js"></script>
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
-    <script>
-        function myAge(){
-            var ano = new Date();
-            var idade;
-            if(ano.getMonth() < 10)
-            	idade = ano.getFullYear()-2000;
-            else if(ano.getMonth() >= 10)
-            	idade = ano.getFullYear()-1999;
-            document.getElementById("myAge").innerHTML = "Chamo-me Arthur, possuo "+idade+" anos e vivo na cidade de Parnamirim/RN.";
-            document.getElementById("myAge2").innerHTML = "No presente momento, estou cursando bacharel em Ciencias e Tecnologia na Universidade Federal do Rio Grande do Norte.";
-            document.getElementById("myAge3").innerHTML = "Tenho prática com C++, HTML, GIT, BASH e sou fluente em inglês. ";
-            document.getElementById("myAge4").innerHTML = "Adoro tirar interagir com as pessoas, sou extremamente simpático e dedicado.";
-        }
-    </script>
 </head>
 
 <body>
@@ -27,7 +13,7 @@
         <a href="https://youtu.be/oB4K0scMysc" target="_blank"><img src="916.png" style="width:30px; margin-left:15px"></a>
         <ul class="nav">
           <li id="nav_item"><a href="#inicio" id="nav_item">Inicio</a></li>
-          <li id="nav_item"><a href="#portfolio_heading" id="nav_item">Portfólio</a><li>
+          <li id="nav_item"><a href="#myAge4" id="nav_item">Portfólio</a><li>
           <li id="nav_item"><a href="#contato" id="nav_item">Contato</a><li>
     </div>
 
@@ -37,25 +23,24 @@
 		</div>
 
         <div id="about">
-            <a href="https://github.com/ArthurBMO" target="_blank"><img style="margin-left:50px;width:47px;height:47px" id="social" src="git2.png"></a>
             <a href="https://t.me/mistahmidnighto" target="_blank"><img id="social" src="logo.png"></a>
+            <a href="https://github.com/ArthurBMO" target="_blank"><img style="margin-left:50px;width:50px;height:50px" id="social" src="github.png"></a>
             <p style="font-size:2vw;"><br>Sobre Mim</p>
             <p id="myAge" style="font-size:1.3vw;margin-bottom:5px"><script>myAge();</script></p>
-            <p id="myAge2" style="font-size:1.3vw;margin-top:0px;margin-bottom:5px"><script>myAge();</script></p>
-            <p id="myAge3" style="font-size:1.3vw;margin-bottom:5px;margin-top:0px"><script>myAge();</script></p>
-            <p id="myAge4" style="font-size:1.3vw;margin-bottom:100px;margin-top:0px"><script>myAge();</script></p>
+            <p id="myAge2" style="font-size:1.3vw;margin:0px 0px 5px 0px;"><script>myAge();</script></p>
+            <p id="myAge3" style="font-size:1.3vw;margin:0px 0px 5px 0px"><script>myAge();</script></p>
+            <!-- serve de id pra navbar levar ao portfolio -->
+            <p id="myAge4" style="font-size:1.3vw;margin:0px 0px 100px 0px"></p>
         </div>
     </div>
-    <!-- fricken done -->
         <div id="portfolio">
-            <p id="portfolio_heading">Projetos</p>
-            <!--wanna add some sort of javascript here-->
             <div id="portfolio_contents">
+                <p id="portfolio_heading"><img src="95.png" style="width:89px;height:50px;">Projetos</p>
                 <div id="java_stuff">
-                    <p style="font-size:1vw">Um menu simples de restaurante em JS.<br>Clique no botão para iniciar.
-                        <a href="https://github.com/ArthurBMO/Amigaos_menu" target="_blank">Ou em mim para ver o repositório</a>
+                    <p style="font-size:1vw;color:black;">Um menu simples de restaurante em JS.<br>Clique no botão para iniciar.
+                        <a href="https://github.com/ArthurBMO/Amigaos_menu" style="color:black" target="_blank">Ou em mim para ver o repositório</a>
                     </p>
-                    <button class="btn" onclick="start();" style="color:#FFF;font-size:12px">PLAY</button>
+                    <button class="btn" onclick="start();">PLAY</button>
                 </div>
                 <div>
                     <p style="font-size:1vw;justify-content:center;display:flex;margin:auto">Um jogo educativo sobre matemática para o 4 ano. Clique na foto para jogar.</p>
@@ -66,6 +51,19 @@
             </div>
         </div>
 
+        <div id="contato">
+        <div class="feedback-card">
+            <div class="feedback-header">SEND FEEDBACK</div>
+            <form class="feedback-body">
+                <input class="feedback-body__email"
+                    placeholder="Email",type="email">
+                <textarea class"feedback-body__message"
+                    placeholder="Message",type="text">
+                </textarea>
+                <button class="feedback-body__submit">SEND</button>
+            </form>
+        </div>
+    </div>
 <!--inicio do contatos
     <div class="container-fluid">
 			<a name="contato"></a>
