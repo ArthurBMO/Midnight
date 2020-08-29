@@ -117,6 +117,9 @@ body{
 }
 
 #portfolio_contents{
+    clear: both;
+    text-align: center;
+    animation: fadeIn 4s;
      background-color: #00807F;
      padding-top:0%;
      margin-left:0.5%;
@@ -130,22 +133,28 @@ body{
     clear:both;
     margin-right: 50px;
     margin-top: 90px;
-    background-color: floralwhite;
-    padding: 50px 50px 50px 50px;
+    background-color: #faebd7;
+    padding: 0.5vw;
     border: 1px solid black;
-    box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+    box-shadow: 0.6rem 0.6rem 0 black /*rgba(29, 30, 28, 0.26)*/;
+}
+
+#borderr{
+    border-bottom:1px solid black;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    padding:2vw
 }
 
 .btn{
-  width:120px;
-  height: 30px;
-  cursor: pointer;
+  cursor: text;
   outline: none;
-  border: 2px solid rgba(0, 0, 0, 0.6);
-  background-color: #dadad3;
-  padding: 5px;
-  color:black;
-  font-weight: 500;
+  border: 0px solid rgba(0, 0, 0, 0.6);
+  background-color: #cd0000;
+  padding: 0.2vw 0vw 0.1vw;
+  color:white;
+  font-weight: 1;
+  font-size:0.8vw;
 }
 
 #img{
@@ -153,13 +162,13 @@ body{
   margin-right:1%;
   float: center;
   margin-bottom:1.7%;
-  box-shadow: 0px 0px 2px #fff;
+  border:1px solid #fff;
   transition-duration: 0.4s;
 }
 
 #img:hover{
   transition-duration: 0.4s;
-  box-shadow: 0px 0px 2px #fff;
+  border:1px solid #fff;
   transform: scale(1.05);
 }
 
@@ -197,10 +206,10 @@ button {
 .feedback-card {
   border: 1px solid black;
   max-width: 980px;
-  background-color: floralwhite;
+  background-color: #faebd7;
   display: table;
   margin: 0 auto;
-  box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+  box-shadow: 0.6rem 0.6rem 0 black/*rgba(29, 30, 28, 0.26)*/;
   padding:0% 3.3vw;
 }
 .feedback-header {

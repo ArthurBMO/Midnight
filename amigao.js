@@ -9,6 +9,7 @@
   */
 
 //não tem haver com os salgados, é só pra não ficar no html
+
 function myAge(){
   var ano = new Date();
   var idade;
