@@ -17,9 +17,9 @@ function myAge(){
       idade = ano.getFullYear()-2000;
   else if(ano.getMonth() >= 10)
       idade = ano.getFullYear()-1999;
-  document.getElementById("myAge").innerHTML = "Possuo prática com C++, HTML, javascript, Python, GIT, BASH e possuo fluência em inglês.";
+  document.getElementById("myAge").innerHTML = "Possuo prática com C++, HTML, Javascript, BASH e sou fluente em inglês. Gosto de aprender.";
   document.getElementById("myAge2").innerHTML = "Chamo-me Arthur, possuo "+idade+" anos e vivo na cidade de Parnamirim/RN. No presente momento";
-  document.getElementById("myAge3").innerHTML = "estou bacharelando em Ciencias e Tecnologia na Universidade Federal do Rio Grande do Norte.";// Sou dedicado e simpático.
+  document.getElementById("myAge3").innerHTML = "estou bacharelando em Ciencias e Tecnologia na Universidade Federal do Rio Grande do Norte.";// 
 }
 
 //aqui começa o do menu de restaurante

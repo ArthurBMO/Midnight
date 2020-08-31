@@ -113,7 +113,7 @@ body{
     background-color:#000080;
     color:white;
     text-transform: uppercase;
-    box-shadow: -0.3rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+    box-shadow: 0.3rem 0.6rem 0 black /*rgba(29, 30, 28, 0.26);*/
 }
 
 #portfolio_contents{
@@ -158,7 +158,8 @@ body{
 }
 
 #img{
-  border-radius:10px;
+  /*border-radius:10px;*/
+  box-shadow:0.6rem 0.6rem 0 black;
   margin-right:1%;
   float: center;
   margin-bottom:1.7%;
