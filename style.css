@@ -78,7 +78,7 @@ body
 
 #nav_item:hover
 {
-  color: #99d8d0;
+  color: #ca0000;
   transform: scale(1.10);
   transition-duration: 0.3s;
 }
@@ -135,10 +135,10 @@ body
 
 #portfolio_contents
 {
-    clear: both;
     text-align: center;
     animation: fadeIn 4s;
-     background-color: #00807F;
+/*    background:linear-gradient(135deg,#007e7d 0%,#007f5b 100%);*/
+    background-color: #008080;
      padding-top:0%;
      margin-left:0.5%;
      margin-right:0.5%;
@@ -149,7 +149,6 @@ body
 #java_stuff
 {
     float:right;
-    clear:both;
     margin-right: 50px;
     margin-top: 90px;
     background-color: #faebd7;
@@ -181,7 +180,7 @@ body
 .btn:hover
 {
   color:white;
-  background-color: #cd0000;
+  background-color: #ca0000;
 }
 
 #img
@@ -202,16 +201,17 @@ body
   transform: scale(1.05);
 }
 
-/*#contato
+#interesses
 {
     background-color: #00807F;
     padding: 1% 0%;
     margin:2% 0.5% 0% 0.5%;
     border: 0.01px solid floralwhite;
-}*/
+}
 
 #footer
 {
+  clear:both;
   color:white;
   display: flex;
   justify-content: center;
