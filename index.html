@@ -1,115 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Midnight</title>
-        <link rel="icon" type="image/png" href="pink.jpg">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="amigao.js"></script>
-    </head>
 
-    <body>
-        <div class="navbar">
-            <a href="https://youtu.be/7YDkrJaiCrw" target="_blank"><img src="tardis2d.png" style="width:30px; margin-left:15px"></a>
-            <ul class="nav">
-                <li class="nav_item"><a href="#inicio" class="nav_item">Inicio</a></li>
-                <li class="nav_item"><a href="#projectos" class="nav_item">Projetos</a><li>
-                <li class="nav_item"><a href="#sobremimAqui" class="nav_item">Mais sobre mim</a><li>
-             </ul>
+<head>
+    <title>Midnight</title>
+    <link rel="icon" type="image/png" href="Icons/pink.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleProjetos.css">
+    <script type="text/javascript" src="amigao.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="https://youtu.be/7YDkrJaiCrw" target="_blank"><img src="Icons/tardis2d.png"
+                style="width:30px; margin-left:15px"></a>
+        <ul class="nav">
+            <li class="nav_item"><a href="#inicio" class="nav_item">Inicio</a></li>
+            <li class="nav_item"><a href="#projectos" class="nav_item">Projetos</a>
+            <li>
+            <!--<li class="nav_item"><a href="#sobremimAqui" class="nav_item">Mais sobre mim</a>-->
+            <li>
+        </ul>
+    </div>
+
+
+    <!-- parte com a minha foto e descrição -->
+    <div class="main" id="inicio">
+
+        <!-- minha foto -->
+        <div id="in">
+            <img src="Images/me.jpg">
         </div>
 
-
-        <!-- parte com a minha foto e descrição -->
-        <div class="main" id="inicio">
-
-            <!-- minha foto -->
-            <div id="in">
-                <img src="me.jpg">
-            </div>
-
-            <!-- a descrição e links -->
-            <div id="about">
-                <a href="https://t.me/mistahmidnighto" target="_blank"><img src="logo.png"></a>
-                <a href="https://github.com/arthurbttf" target="_blank"><img style="margin-left:50px;width:50px;height:50px" src="github.png"></a>
-                <p style="font-size:2vw;"><br>Sobre Mim</p>
-                <!-- tudo isso pra ter idade em javascript kkk eu quis praticar, ta?-->
-                <p id="myAge" style="font-size:1.3vw;margin-bottom:5px"><script>myAge();</script></p>
-                <p id="myAge2" style="font-size:1.3vw;margin:0px 0px 5px 0px;"><script>myAge();</script></p>
-                <p id="myAge3" style="font-size:1.3vw;margin:0px 0px 5px 0px"><script>myAge();</script></p>
-                <!-- serve de id pra navbar levar ao portfolio -->
-                <p id="projectos" style="font-size:1.3vw;margin:0px 0px 100px 0px"></p>
-            </div>
+        <!-- a descrição e links -->
+        <div id="about">
+            <a href="https://t.me/mistahmidnighto" target="_blank"><img src="Icons/logo.png"></a>
+            <a href="https://github.com/arthurbttf" target="_blank"><img style="margin-left:50px;width:50px;height:50px"
+                    src="Icons/github.png"></a>
+            <p style="font-size:2vw;"><br>Sobre Mim</p>
+            <!-- tudo isso pra ter idade em javascript kkk eu quis praticar, ta?-->
+            <p id="myAge" style="font-size:1.3vw;margin-bottom:5px">
+                <script>myAge();</script>
+            </p>
+            <p id="myAge2" style="font-size:1.3vw;margin:0px 0px 5px 0px;">
+                <script>myAge();</script>
+            </p>
+            <p id="myAge3" style="font-size:1.3vw;margin:0px 0px 5px 0px">
+                <script>myAge();</script>
+            </p>
+            <!-- serve de id pra navbar levar ao portfolio -->
+            <p id="projectos" style="font-size:1.3vw;margin:0px 0px 100px 0px"></p>
         </div>
+    </div>
 
-        <!-- inicio do portfolio -->
-        <div id="portfolio_contents">
-            <p class="portfolio_heading"><img src="startbutton.png">Projetos</p>
+    <!-- inicio do portfolio -->
+    <div id="portfolio_contents">
+        <p class="portfolio_heading"><img src="Icons/startbutton.png">Projetos</p>
 
-            <!-- iniciando java_stuff -->
-            <div id="java_stuff">
-
-                <!-- borda de cima da esquerda-->
-                <div id="top-left-border"></div>
-                <!-- texto em vermelho -->
-                <p id="red-text">amigao.js</p>
-                <!-- borda de cima da direita -->
-                <div id="top-right-border"></div>
-
-                <!-- bordas dos lados e debaixo -->
-                <div id="borderr">
-                    <!-- content -->
-                    <p style="">Um menu simples de restaurante em JS.<br>Clique no botão para iniciar.
-                    <a href="https://github.com/arthurbttf/Amigaos_menu" target="_blank">Ou em mim para ver o repositório</a></p>
-                    <button class="btn" onclick="start();">&lt;Ok&gt;</button>
-                </div>
-            </div><!--fim do java_stuff-->
-
-            <!-- o jogo -->
-            <div id="jogo" style="display:inline-block">
-                    <p style="margin:auto">Um jogo educativo sobre matemática para o 4 ano. Clique na foto para jogar.</p>
-                    <p style="margin:2px 0px 10px 0px" ><a href="https://github.com/arthurbttf/Math_Destroyer" target="_blank"> Ou em mim para ver o repositório</a></p>
-                    <a href="https://arthurbttf.github.io/Math_Destroyer/" target="_blank"><img src="start.png"/></a>
-                    <!-- pra navbar jogar numa posição melhor quando clicar em mais sobre mim -->
-					<p id="sobremimAqui"></p>
-            </div>
-            <!-- fim do jogo -->
-        </div>
-            <!-- fim do portfolio -->
-
-
-
-		<!-- inicio mais sobre mim -->
-        <div id="Maissobremim">
-        	<!-- background azul do inicio -->
-            <p class="Maissobremim_heading"><img src="linuxfolder.png">Mais sobre mim</p>
-            
-            <!-- inicio interesses -->
-			<div id="interesses">
-				<h2>Interesses</h2>
-            	<img src="otherkombi.png" style="width: 70px;margin-left:10%">
-            	<img src="camera.png" style="width:50px;margin: 0px 50px;">
-            	<img src="desktop.png" style="width: 50px">
-            	
-				<!-- parte do texto -->
-				<div style="margin-left: 10%;">
-					<p style="text-align: justify;">Sou um adorador de coisa velha, acho muito charmoso o design das coisas antigas, principalmente das câmeras fotográficas soviéticas, dos carros e dos computadores; também gosto muito de viajar, pretendo viajar toda a América e talvez a Ásia; e o mais importante de todos são as pessoas, os momentos que compartilho com elas e todas as histórias de vida que as acompanham. Na maior parte do tempo acham que sou hippie.. Paz!</p>
-				</div>
-            </div>
-            <!-- fim do interesses -->
-            
-            <!-- inicio dos passatempos -->
-			<div id="passatempos">
-		        <h2>Passatempos</h2>
-		        <p style="text-align:center;">Fotografia;<br>Doctor Who;<br>Programação;<br>Decair nas profundezas do Linux;<br>Qualquer coisa que envolva computadores;<br>Conversar qualquer coisa viajada com alguém.</p>
-		    </div>
-            <!-- fim do passatempo -->
-
-        </div>
-        <!-- fim do mais sobre mim -->
         
-        <div>
-		    <footer>
-		        <p  id="footer">You can copy if you want, there's no copyright - 12020 || Tutubarão</p>
-		    </footer>
+        <div id="urna">
+            <p style="margin:auto">Um projeto que fiz para ajudar na votação de professores das escolas públicas de Parnamirim/RN.<br>Clique na foto para acessar a urna.</p>
+            <p style="margin:2px 0px 10px 0px"><a href="https://github.com/arthurbttf/urna-simples" target="_blank">
+                    Ou em mim para ver o repositório</a></p>
+            <a href="https://arthurbttf.github.io/urna-simples/" target="_blank"><img src="Images/urna.png" /></a>
         </div>
-	</body>
+        
+        <!--O projeto covid-->
+        <div id="covid">
+            <p style="margin:auto">Um pequeno projeto que reúne os casos de Covid-19 com Python.<br>Clique na foto para interagir com os gráficos</p>
+            <p style="margin:2px 0px 10px 0px"><a href="https://github.com/arthurbttf/Covid-19" target="_blank">
+                    Ou em mim para ver o repositório</a></p>
+            <a href="https://covid-poo.herokuapp.com/" target="_blank"><img src="Images/covid.png" /></a>
+        </div>
+        
+        <!-- iniciando java_stuff -->
+        <div id="java_stuff">
+
+            <!-- borda de cima da esquerda-->
+            <div id="top-left-border"></div>
+            <!-- texto em vermelho -->
+            <p id="red-text">amigao.js</p>
+            <!-- borda de cima da direita -->
+            <div id="top-right-border"></div>
+
+            <!-- bordas dos lados e debaixo -->
+            <div id="borderr">
+                <!-- content -->
+                <p>Um menu simples de restaurante em JS.<br>Clique no botão para iniciar.
+                    <a href="https://github.com/arthurbttf/Amigaos_menu" target="_blank">Ou em mim para ver o
+                        repositório</a>
+                </p>
+                <button class="btn" onclick="start();">&lt;Ok&gt;</button>
+            </div>
+        </div>
+        <!-- o jogo -->
+        <div id="jogo" style="display:inline-block">
+            <p style="margin:auto">Um jogo educativo sobre matemática para o 4 ano. Clique na foto para jogar.</p>
+            <p style="margin:2px 0px 10px 0px"><a href="https://github.com/arthurbttf/Math_Destroyer" target="_blank">
+                    Ou em mim para ver o repositório</a></p>
+            <a href="https://arthurbttf.github.io/Math_Destroyer/" target="_blank"><img src="Images/joguinho.png" /></a>
+            <!-- pra navbar jogar numa posição melhor quando clicar em mais sobre mim -->
+            <p id="sobremimAqui"></p>
+        </div>
+        <!-- fim do jogo -->
+        
+    </div>
+    <!-- fim do portfolio -->
+
+
+    <!--
+    <!-- inicio mais sobre mim ->
+    <div id="Maissobremim">
+        <!-- background azul do inicio ->
+        <p class="Maissobremim_heading"><img src="Icons/linuxfolder.png">Mais sobre mim</p>
+
+        <!-- inicio interesses ->
+        <div id="interesses">
+            <h2>Interesses</h2>
+            <img src="Icons/otherkombi.png" style="width: 70px;margin-left:10%">
+            <img src="Icons/camera.png" style="width:50px;margin: 0px 50px;">
+            <img src="Icons/desktop.png" style="width: 50px">
+
+            <!-- parte do texto ->
+            <div style="margin-left: 10%;">
+                <p style="text-align: justify;">Sou um adorador de coisa velha, acho muito charmoso o design das coisas
+                    antigas, principalmente das câmeras fotográficas soviéticas, dos carros e dos computadores; também
+                    gosto muito de viajar, pretendo viajar toda a América e talvez a Ásia; e o mais importante de todos
+                    são as pessoas, os momentos que compartilho com elas e todas as histórias de vida que as acompanham.
+                    Na maior parte do tempo acham que sou hippie.. Paz!</p>
+            </div>
+        </div>
+        <!-- fim do interesses ->
+
+        <!-- inicio dos passatempos ->
+        <div id="passatempos">
+            <h2>Passatempos</h2>
+            <p style="text-align:center;">Fotografia;<br>Doctor Who;<br>Programação;<br>Decair nas profundezas do
+                Linux;<br>Qualquer coisa que envolva computadores;<br>Conversar qualquer coisa viajada com alguém.</p>
+        </div>
+        <!-- fim do passatempo ->
+
+    </div>
+    <!-- fim do mais sobre mim -->
+
+    <div>
+        <footer>
+            <p id="footer"><script>myAge();</script></p>
+        </footer>
+    </div>
+</body>
+
 </html>

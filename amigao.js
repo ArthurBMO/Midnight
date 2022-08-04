@@ -20,6 +20,7 @@ function myAge(){
   document.getElementById("myAge").innerHTML = "Possuo prática com C++, HTML, Javascript, BASH e sou fluente em inglês. Gosto de aprender.";
   document.getElementById("myAge2").innerHTML = "Chamo-me Arthur, possuo "+idade+" anos e vivo na cidade de Parnamirim/RN. No presente momento";
   document.getElementById("myAge3").innerHTML = "estou bacharelando em Ciencias e Tecnologia na Universidade Federal do Rio Grande do Norte.";// 
+  document.getElementById("footer").innerHTML = "You can copy if you want, there's no copyright - "+ano.getFullYear()+" || Tutubarão";
 }
 
 //aqui começa o do menu de restaurante

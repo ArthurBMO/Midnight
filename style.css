@@ -1,34 +1,31 @@
-*{
+* {
 	font-family: Helvetica, Arial;
 	color: white;
 	scroll-behavior: smooth;
 }
 
-body
-{
-	background-image: url(star.png);
+body {
+	background-image: url(Images/star.png);
 }
 
 /*figure out the colour for navbar*/
 
-.navbar
-{
+.navbar {
 	animation: fadeInNav 2.5s;
 	align-items: center;
 	display: flex;
 	position: fixed;
 	background-color: #222;
-	opacity:0.9;
+	opacity: 0.9;
 	width: 99%;
 	max-width: 99%;
 	max-height: 18%;
-	z-index:1;
+	z-index: 1;
 	box-shadow: 0px 0px 50px #232323;
 }
 
-.nav
-{
-	color:white;
+.nav {
+	color: white;
 	display: flex;
 	justify-content: right;
 	list-style: none;
@@ -36,274 +33,123 @@ body
 	text-transform: uppercase;
 }
 
-.nav_item
-{
-	margin-right:15px;
+.nav_item {
+	margin-right: 15px;
 	font-size: 1.3vw;
 	text-decoration: none;
 	transform: scale(1);
 	transition-duration: 0.3s;
 }
 
-.nav_item:hover
-{
+.nav_item:hover {
 	color: #ca0000;
 	transform: scale(1.10);
 	transition-duration: 0.3s;
 }
 
-.main
-{
+.main {
 	padding-top: 40px;
 	color: white;
 	text-align: center;
 	animation: fadeIn 3s;
 }
 
-#in
-{
-	padding-top:3%;
+#in {
+	padding-top: 3%;
 	justify-content: center;
-	width:100%;
+	width: 100%;
 	clear: both;
 }
 
-#in img
-{
-	border-radius:100%;
-	width:270px;
-	height:335px;
+#in img {
+	border-radius: 100%;
+	width: 270px;
+	height: 335px;
 }
 
-#about
-{
+#about {
 	clear: both;
-	width:100%;
+	width: 100%;
 	height: 100%;
 }
 
-#about img
-{
+#about img {
 	width: 51px;
 	height: 51px;
 }
 
-.portfolio_heading
-{
-    font-size:2vw;
-    padding: 1% 0% 0.5% 0%;
-    margin: 0.5% 0.5% 2% 0.5%;
-    display: flex;
-    justify-content: center;
-    background-color:#000080;
-    color:white;
-    text-transform: uppercase;
-    box-shadow: 0.3rem 0.6rem 0 black;
+#Maissobremim {
+	animation: fadeIn 2.5s;
+	padding: 1% 0%;
+	margin: 2% 0.5% 0% 0.5%;
+	border: 0.01px solid grey;
+	background-color: #202020;
 }
 
-.portfolio_heading img
-{
-	width:89px;
-	margin:-10px 10px -5px;
+.Maissobremim_heading {
+	font-size: 2vw;
+	padding: 1% 0% 0.5% 0%;
+	margin: -0.8% 0.2% 2% 0.2%;
+	background-color: #06476f;
+	color: white;
+	text-transform: capitalize;
 }
 
-#portfolio_contents
-{
-	text-align: center;
-	animation: fadeIn 4s;
-	background:linear-gradient(135deg,#007e7d 0%,#007f5b 100%);
-	padding-top:0%;
-	margin-left:0.5%;
-	margin-right:0.5%;
-	border: 0.01px solid floralwhite;
+.Maissobremim_heading img {
+	width: 40px;
+	margin: -10px auto;
 }
 
-#java_stuff
-{
-    float:right;
-    margin-right: 50px;
-    margin-top: 90px;
-    background-color: #faebd7;
-    padding: 0.5vw;
-    border: 1px solid black;
-    box-shadow: 0.6rem 0.6rem 0 black;
-}
-
-#top-left-border
-{
-	background-color: black;
-	margin: 0% 60% -1.6% 0%;
-	border-top: 1px solid black;
-}
-
-#red-text
-{
-	border-right:1px solid black;
-	border-left:1px solid black;
-	margin:-0.4vw 40%;
-	padding: 0px;
-	color: red;
-	font-size: 0.7vw;
-}
-
-#top-right-border
-{
-	background-color: black;
-	margin: 0px 0px 0px 60%;
-	border-top: 1px solid black;
-}
-
-#borderr
-{
-    border-bottom:1px solid black;
-    border-left:1px solid black;
-    border-right:1px solid black;
-    padding:2vw
-}
-
-#borderr p
-{
-	font-size:1vw;
-	color:black;
-}
-
-#borderr a
-{
-	color:black;
-}
-
-.btn
-{
-	cursor: text;
-	color:black;
-	outline: none;
-	border: 0px solid rgba(0, 0, 0, 0.6);
-	background-color: #faebd7;
-	padding: 0.2vw 0vw 0.1vw;
-	font-weight: 1;
-	font-size:0.8vw;
-}
-
-.btn:hover
-{
-	color:white;
-	background-color: #ca0000;
-}
-
-#jogo p
-{
-	color:white;
-	text-shadow:2px 2px 1px black;
-	font-size:1vw;
-	justify-content:center;
-	display:flex;
-}
-
-#jogo img
-{
-	width:440px;
-	height:300px;
-	box-shadow:0.6rem 0.6rem 0 black;
-	margin-right:1%;
-	float: center;
-	margin-bottom:1.7%;
-	border:1px solid #fff;
-	transition-duration: 0.4s;
-}
-
-#jogo img:hover
-{
-	transition-duration: 0.4s;
-	border:1px solid #fff;
-	transform: scale(1.05);
-}
-
-#Maissobremim
-{
-  	animation: fadeIn 2.5s;
-    padding: 1% 0%;
-    margin:2% 0.5% 0% 0.5%;
-    border: 0.01px solid grey;
-    background-color:#202020;
-}
-
-.Maissobremim_heading
-{
-    font-size:2vw;
-    padding: 1% 0% 0.5% 0%;
-    margin: -0.8% 0.2% 2% 0.2%;
-    background-color:#06476f;
-    color:white;
-    text-transform: capitalize;
-}
-
-.Maissobremim_heading img
-{
-	width:40px;
-	margin:-10px auto;
-}
-
-#interesses
-{
+#interesses {
 	margin-right: 40%;
 	text-align: center;
 }
 
-#interesses h2
-{
+#interesses h2 {
 	background-color: darkcyan;
-	color:wheat;
-	border-radius:5px;
-	padding-top:5px;
-	margin-left:10%;
+	color: wheat;
+	border-radius: 5px;
+	padding-top: 5px;
+	margin-left: 10%;
 }
 
-#passatempos
-{
+#passatempos {
 	text-align: center;
 	margin: 5% 4% 5% 50%;
 }
 
-#passatempos h2
-{
+#passatempos h2 {
 	background-color: darkcyan;
-	color:wheat;
-	padding-top:5px;
-	border-radius:5px;
+	color: wheat;
+	padding-top: 5px;
+	border-radius: 5px;
 }
 
-#footer
-{
-	clear:both;
-	color:white;
+#footer {
+	clear: both;
+	color: white;
 	display: flex;
 	justify-content: center;
 }
 
 /*fadein animation*/
 
-@keyframes fadeIn
-{
-	from
-	{
+@keyframes fadeIn {
+	from {
 		opacity: 0;
 	}
 
-	to
-	{
-		opacity:1;
+	to {
+		opacity: 1;
 	}
 }
 
-@keyframes fadeInNav
-{
-	from
-	{
+@keyframes fadeInNav {
+	from {
 		opacity: 0;
 	}
 
-	to
-	{
-		opacity:0.9;
+	to {
+		opacity: 0.9;
 	}
 }

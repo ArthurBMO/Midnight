@@ -1,0 +1,168 @@
+.portfolio_heading {
+	font-size: 2vw;
+	padding: 1% 0% 0.5% 0%;
+	margin: 0.5% 0.5% 2% 0.5%;
+	display: flex;
+	justify-content: center;
+	background-color: #000080;
+	color: white;
+	text-transform: uppercase;
+	box-shadow: 0.3rem 0.6rem 0 black;
+}
+
+.portfolio_heading img {
+	width: 89px;
+	margin: -10px 10px -5px;
+}
+
+#portfolio_contents {
+	text-align: center;
+	animation: fadeIn 4s;
+	background: linear-gradient(135deg, #007e7d 0%, #007f5b 100%);
+	padding-top: 0%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	border: 0.01px solid floralwhite;
+}
+
+#java_stuff {
+	float: right;
+	margin-right: 50px;
+	margin-top: 90px;
+	background-color: #faebd7;
+	padding: 0.5vw;
+	border: 1px solid black;
+	box-shadow: 0.6rem 0.6rem 0 black;
+}
+
+#top-left-border {
+	background-color: black;
+	margin: 0% 60% -1.6% 0%;
+	border-top: 1px solid black;
+}
+
+#red-text {
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	margin: -0.4vw 40%;
+	padding: 0px;
+	color: red;
+	font-size: 0.7vw;
+}
+
+#top-right-border {
+	background-color: black;
+	margin: 0px 0px 0px 60%;
+	border-top: 1px solid black;
+}
+
+#borderr {
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	padding: 2vw
+}
+
+#borderr p {
+	font-size: 1vw;
+	color: black;
+}
+
+#borderr a {
+	color: black;
+}
+
+.btn {
+	cursor: text;
+	color: black;
+	outline: none;
+	border: 0px solid rgba(0, 0, 0, 0.6);
+	background-color: #faebd7;
+	padding: 0.2vw 0vw 0.1vw;
+	font-weight: 1;
+	font-size: 0.8vw;
+}
+
+.btn:hover {
+	color: white;
+	background-color: #ca0000;
+}
+
+#urna{
+	float:inline-start;
+	margin-left: 120px;
+}
+#covid p {
+	color: white;
+	text-shadow: 2px 2px 1px black;
+	font-size: 1vw;
+	justify-content: center;
+	display: flex;
+}
+
+#covid img {
+	width: 440px;
+	height: 300px;
+	box-shadow: 0.6rem 0.6rem 0 black;
+	margin-right: 1%;
+	float: center;
+	margin-bottom: 1.7%;
+	border: 1px solid #fff;
+	transition-duration: 0.4s;
+}
+
+#covid img:hover {
+	transition-duration: 0.4s;
+	border: 1px solid #fff;
+	transform: scale(1.05);
+}
+
+#urna p {
+	color: white;
+	text-shadow: 2px 2px 1px black;
+	font-size: 1vw;
+	justify-content: center;
+	display: flex;
+}
+
+#urna img {
+	width: 440px;
+	height: 300px;
+	box-shadow: 0.6rem 0.6rem 0 black;
+	margin-right: 1%;
+	float: center;
+	margin-bottom: 1.7%;
+	border: 1px solid #fff;
+	transition-duration: 0.4s;
+}
+
+#urna img:hover {
+	transition-duration: 0.4s;
+	border: 1px solid #fff;
+	transform: scale(1.05);
+}
+#jogo p {
+	color: white;
+	text-shadow: 2px 2px 1px black;
+	font-size: 1vw;
+	justify-content: center;
+	display: flex;
+}
+
+#jogo img {
+	width: 440px;
+	height: 300px;
+	box-shadow: 0.6rem 0.6rem 0 black;
+	margin-right: 1%;
+	float: center;
+	margin-bottom: 1.7%;
+	border: 1px solid #fff;
+	transition-duration: 0.4s;
+}
+
+#jogo img:hover {
+	transition-duration: 0.4s;
+	border: 1px solid #fff;
+	transform: scale(1.05);
+}
+
